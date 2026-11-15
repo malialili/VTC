@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vtc-bordeaux.fr/sitemap.xml
+
+# Crawl delay for better server performance
+Crawl-delay: 1
+
+# Disallow crawling of admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+
+# Disallow crawling of search results
+Disallow: /search
+Disallow: /recherche
+
+# Allow all other pages
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /images/

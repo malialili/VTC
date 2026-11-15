@@ -1,0 +1,155 @@
+{
+    "name": "VTC Bordeaux",
+    "short_name": "VTCBx",
+    "description": "Service VTC professionnel à Bordeaux - Chauffeur privé 24h/24 avec prix fixes",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#2563eb",
+    "theme_color": "#2563eb",
+    "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "apple touch icon"
+        },
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Réserver maintenant",
+            "short_name": "Réserver",
+            "description": "Réservez un VTC à Bordeaux",
+            "url": "/#contact",
+            "icons": [
+                {
+                    "src": "/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Voir les tarifs",
+            "short_name": "Tarifs",
+            "description": "Consultez nos tarifs VTC",
+            "url": "/#tarifs",
+            "icons": [
+                {
+                    "src": "/favicon-96x96.png",
+                    "sizes": "96x96",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/images/og-image.jpg",
+            "sizes": "1200x630",
+            "type": "image/jpeg",
+            "form_factor": "wide",
+            "label": "VTC Bordeaux - Accueil"
+        },
+        {
+            "src": "/images/hero-desktop.jpg",
+            "sizes": "1920x1080",
+            "type": "image/jpeg",
+            "form_factor": "wide",
+            "label": "VTC Bordeaux - Hero"
+        }
+    ],
+    "handle_links": "preferred",
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    },
+    "edge_side_panel": {
+        "preferred_width": 400
+    },
+    "display_override": ["window-controls-overlay", "standalone", "browser"],
+    "protocol_handlers": [
+        {
+            "protocol": "web+vtcbordeaux",
+            "url": "/?protocol=%s"
+        }
+    ],
+    "share_target": {
+        "action": "/share",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url",
+            "files": [
+                {
+                    "name": "files",
+                    "accept": ["image/*"]
+                }
+            ]
+        }
+    }
+}
